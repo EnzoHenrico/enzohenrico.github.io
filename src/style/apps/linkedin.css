@@ -1,0 +1,31 @@
+/* content style */
+#linkedin-card {
+  font-family: "Source Sans 3", sans-serif;
+}
+
+#linkedin-card h1 {
+  grid-area: title;
+  font-size: 2rem;
+  font-weight: 500;
+  justify-self: center;
+}
+
+#linkedin-card button {
+  grid-area: redirect-btn;
+  background-color: var(--linkedin-blue);
+  width: 100%;
+  border-radius: 50px;
+  padding: 10px;
+  justify-self: center;
+  align-self: center;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#linkedin-card img {
+  grid-area: image;
+  width: 140px;
+  margin-left: 15px;
+}

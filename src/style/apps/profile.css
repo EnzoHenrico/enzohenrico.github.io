@@ -1,0 +1,106 @@
+/* Profile app */
+#profile-app {
+  width: 400px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* card */
+#profile-app .profile-card {
+  display: grid;
+  grid-template:
+    "name image"
+    "description image"
+    / 1fr;
+}
+
+#profile-app .profile-card .name {
+  font-size: 2.25rem;
+  font-weight: 600;
+  grid-area: name;
+  align-self: end;
+}
+
+#profile-app .profile-card .description {
+  grid-area: description;
+}
+
+#profile-app .profile-card .user-img {
+  grid-area: image;
+  width: 115px;
+  margin-right: 15px;
+}
+
+/* text */
+#profile-app .profile-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: DM Sans;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#profile-app .profile-text span {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#profile-app .profile-tags ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#profile-app .profile-tags li {
+  padding: 7px 15px;
+  border-radius: 30px;
+}
+
+#profile-app .profile-tags #kotlin {
+  background-color: rgba(202, 170, 242, 1);
+}
+
+#profile-app .profile-tags #java {
+  background-color: rgba(236, 171, 171, 1);
+}
+
+#profile-app .profile-tags #javascript {
+  background-color: rgb(253, 242, 143);
+}
+
+#profile-app .profile-tags #php {
+  background-color: rgba(170, 193, 215, 1);
+}
+
+#profile-app .profile-tags #css {
+  background-color: rgba(170, 228, 246, 1);
+}
+
+#profile-app .profile-tags #react {
+  background-color: rgba(170, 187, 246, 1);
+}
+
+#profile-app .profile-tags #vue {
+  background-color: rgba(170, 246, 210, 1);
+}
+
+#profile-app .profile-tags #node {
+  background-color: rgba(173, 209, 170, 1);
+}
+
+#profile-app .profile-tags #laravel {
+  background-color: rgba(221, 170, 170, 1);
+}
+
+#profile-app .profile-tags #mongo {
+  background-color: rgba(188, 240, 170, 1);
+}
+
+#profile-app .profile-tags #mysql {
+  background-color: rgba(209, 210, 203, 1);
+}

@@ -1,0 +1,54 @@
+/* Gmail app */
+#gmail-app {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#gmail-app #logo {
+  align-self: center;
+}
+
+.mail-fileds {
+  width: 600px;
+  height: 60px;
+  border-bottom: solid var(--light-grey) 1px;
+  background: none;
+}
+
+#gmail-app #message-field {
+  font-size: 1rem;
+  height: 200px;
+  border: none;
+  resize: none;
+}
+
+#gmail-app #message-field::placeholder {
+  font-family: "DM Sans", sans-serif;
+  align-self: top;
+  color: var(--water-mark-grey);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#gmail-app #message-field::placeholder {
+  font-family: "DM Sans", sans-serif;
+  align-self: top;
+  color: var(--water-mark-grey);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#gmail-app #message-field:focus::placeholder {
+  color: transparent;
+}
+
+#send-email {
+  align-self: flex-start;
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: var(--blue);
+  color: white;
+  font-weight: 300;
+  cursor: pointer;
+}
