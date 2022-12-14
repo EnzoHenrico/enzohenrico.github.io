@@ -1,5 +1,9 @@
 /* content style */
 
+#github-card {
+  display: none;
+}
+
 #github-card h1 {
   grid-area: title;
   font-size: 2.5rem;

@@ -9,26 +9,78 @@
   height: fit-content;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
+/* info-panel */
+
 .clock {
-  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 7px;
   padding: 15px 30px;
   background-color: var(--transparent-background-light);
   border-radius: 50px;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1rem;
+  font-weight: 600;
   user-select: none;
 }
 
+/* Home button */
+
 .home-btn {
-  margin: 5px;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   background-color: var(--transparent-background-light);
+  margin: 7px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
-.icons-section {
-  margin: 5px;
-  padding: 15px;
-  background-color: var(--transparent-background-light);
+#circle-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 40%;
+  height: 40%;
+  border: 1px solid rgba(180, 186, 188, 1);
+  border-radius: 50%;
+}
+
+#circle-2 {
+  background-color: rgba(219, 219, 219, 1);
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+}
+
+/* Icons section */
+
+.icons-section ul {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  gap: 10px;
+}
+
+.icon-base {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background-color: var(--ice);
+}
+
+.icon-style {
+  width: 30px;
 }

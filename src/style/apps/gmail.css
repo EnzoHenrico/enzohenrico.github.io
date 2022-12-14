@@ -1,8 +1,12 @@
 /* Gmail app */
+
 #gmail-app {
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  /* hide */
+  display: none;
 }
 
 #gmail-app #logo {

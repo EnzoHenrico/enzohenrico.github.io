@@ -1,6 +1,9 @@
 /* content style */
 #linkedin-card {
   font-family: "Source Sans 3", sans-serif;
+
+  /* hide */
+  display: none;
 }
 
 #linkedin-card h1 {
