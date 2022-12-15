@@ -1,6 +1,7 @@
 /* content style */
 
-#github-card {
+.basic-window[data-name="github-app"] {
+  position: absolute;
   display: none;
 }
 

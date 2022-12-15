@@ -1,15 +1,20 @@
 /* Gmail app */
 
-#gmail-app {
+.basic-window[data-name="gmail-app"] {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  /* display: none; */
+}
+
+#gmail-app-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-  /* hide */
-  display: none;
 }
 
-#gmail-app #logo {
+#gmail-app-content #logo {
   align-self: center;
 }
 
@@ -20,14 +25,14 @@
   background: none;
 }
 
-#gmail-app #message-field {
+#gmail-app-content #message-field {
   font-size: 1rem;
   height: 200px;
   border: none;
   resize: none;
 }
 
-#gmail-app #message-field::placeholder {
+#gmail-app-content #message-field::placeholder {
   font-family: "DM Sans", sans-serif;
   align-self: top;
   color: var(--water-mark-grey);
@@ -35,7 +40,7 @@
   font-weight: 600;
 }
 
-#gmail-app #message-field::placeholder {
+#gmail-app-content #message-field::placeholder {
   font-family: "DM Sans", sans-serif;
   align-self: top;
   color: var(--water-mark-grey);
@@ -43,7 +48,7 @@
   font-weight: 600;
 }
 
-#gmail-app #message-field:focus::placeholder {
+#gmail-app-content #message-field:focus::placeholder {
   color: transparent;
 }
 

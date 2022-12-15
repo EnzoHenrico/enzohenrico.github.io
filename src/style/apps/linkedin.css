@@ -1,9 +1,15 @@
 /* content style */
+
+.basic-window[data-name="linkedin-app"] {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #linkedin-card {
   font-family: "Source Sans 3", sans-serif;
-
-  /* hide */
-  display: none;
 }
 
 #linkedin-card h1 {
