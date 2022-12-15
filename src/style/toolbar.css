@@ -86,7 +86,7 @@
   width: 30px;
 }
 
-.status-markers {
+.icon-area {
   display: flex;
   flex-direction: column;
   align-items: center;

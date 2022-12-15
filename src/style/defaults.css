@@ -161,3 +161,11 @@ body {
 .buttons-box .close:hover:before {
   border-color: var(--ice);
 }
+
+.hidden {
+  display: none;
+}
+
+.closed {
+  display: none;
+}
