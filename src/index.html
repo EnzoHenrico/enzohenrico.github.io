@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+    <script src="./scripts/main.js" defer></script>
     <title>Portifólio</title>
 </head>
 <body>
     <!-- Profile apresentation app -->
-    <div class="basic-window"> 
+    <div class="basic-window" data-name="profile-app">
         <div class="title-bar">
             <div class="buttons-box">
                 <div class="minimize"></div>
                 <div class="close"></div>
             </div>
         </div>
-        <div class="content" id="profile-app">
+        <div class="content" id="profile-app-content">
             <div class="profile-card">
                 <span class="name">Enzo Henrico</span>
                 <img src="../images/user-icon.png" alt="Profile picture" class="user-img">
@@ -50,7 +51,7 @@
     
     
     <!-- G-mail messager app -->
-    <div class="basic-window"> 
+    <div class="basic-window hidden" data-name="gmail-app"> 
         <div class="title-bar">
             <div class="buttons-box">
                 <div class="minimize"></div>
@@ -60,7 +61,7 @@
                 Send a e-mail to "enzo.mascia1@gmail.com"
             </div>
         </div>
-        <form class="content" id="gmail-app">
+        <form class="content" id="gmail-app-content">
             <img src="../images/gmail-logo-1-1.png" alt="Gmail logo" width="195px" height="45px" id="logo"/>
             <input type="email" class="mail-fileds" id="from-field" placeholder="From">
             <input type="text" class="mail-fileds" id="subject-field" placeholder="Subject">
@@ -70,7 +71,7 @@
     </div>
     
     <!-- Github redirection app -->
-    <div class="basic-window" id="dark-background"> 
+    <div class="basic-window hidden" id="dark-theme" data-name="github-app"> 
         <div class="title-bar">
             <div class="buttons-box">
                 <div class="minimize"></div>
@@ -92,7 +93,7 @@
     </div>
 
     <!-- Linkedin redirection app -->
-    <div class="basic-window"> 
+    <div class="basic-window hidden" data-name="linkedin-app"> 
         <div class="title-bar">
             <div class="buttons-box">
                 <div class="minimize"></div>
@@ -121,25 +122,29 @@
         </div>
         <div class="icons-section">
             <ul>
-                <li> 
+                <li class="icon-area" data-appName="github-app">
                     <div class="icon-base">
                         <img src="../images/github-icon.png" alt="GitHub icon" class="icon-style">
                     </div>
+                    <div class="mark" id="openned"></div>
                 </li>
-                <li> 
+                <li class="icon-area" data-appName="linkedin-app"> 
                     <div class="icon-base">
                         <img src="../images/linkedin-icon.png" alt="LinkedIn icon" class="icon-style">
                     </div>
+                    <div class="mark" id="minimized"></div>
                 </li>
-                <li>
+                <li class="icon-area" data-appName="gmail-app">
                     <div class="icon-base">
                         <img src="../images/gmail-icon.png" alt="Gmail icon" class="icon-style">
-                    </div> 
+                    </div>
+                    <div class="mark" id="openned"></div>
                 </li>
-                <li> 
+                <li class="icon-area" data-appName="profile-app"> 
                     <div class="icon-base">
                         <img src="../images/user-icon.png" alt="icon of a profile picture" class="icon-style" >
                     </div>
+                    <div class="mark" id="closed"></div>
                 </li>
             </ul>
         </div>
