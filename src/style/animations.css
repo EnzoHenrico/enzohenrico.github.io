@@ -1,0 +1,90 @@
+/* App-windows animations */
+
+.minimize-animation {
+  animation: minimize-animation 0.5s;
+}
+
+@keyframes minimize-animation {
+  from {
+    opacity: 100%;
+  }
+  to {
+    top: 100%;
+    opacity: 0%;
+  }
+}
+
+.maximize-animation {
+  animation: maximize-animation 0.5s;
+}
+
+@keyframes maximize-animation {
+  from {
+    opacity: 0%;
+    top: 100%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.close-animation {
+  animation: close-animation 0.5s;
+}
+
+@keyframes close-animation {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
+
+.open-animation {
+  animation: open-animation 0.5s;
+}
+
+@keyframes open-animation {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+/* Toolbar animations */
+
+.icon-area:hover {
+  transform: scale(1.1);
+  transition: all 0.25s;
+}
+
+#openned {
+  transform: scaleX(1);
+  transition: all 0.25s;
+  background-color: var(--ice);
+}
+
+#minimized {
+  transform: scaleX(0.3);
+  transition: all 0.25s;
+  border-radius: 50%;
+  background-color: var(--ice);
+}
+
+#closed {
+  opacity: 0%;
+  background-color: var(--ice);
+  animation: icon-status-change-animation 0.25s;
+}
+
+@keyframes icon-status-change-animation {
+  from {
+    opacity: 100%;
+  }
+  to {
+    opacity: 0%;
+  }
+}
