@@ -1,9 +1,8 @@
 /* content style */
 
 .basic-window[data-name="linkedin-app"] {
-  position: absolute;
   top: 60%;
-  left: 80%;
+  left: 30%;
   transform: translate(-50%, -50%);
 }
 

@@ -1,12 +1,5 @@
 /* Profile app */
 
-.basic-window[data-name="profile-app"] {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 #profile-app-content {
   width: 400px;
   height: auto;
