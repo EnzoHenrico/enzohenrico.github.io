@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
     <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/clock.js" defer></script>
     <title>Portifólio</title>
 </head>
 <body>
@@ -61,13 +62,17 @@
                 Send a e-mail to "enzo.mascia1@gmail.com"
             </div>
         </div>
-        <form class="content" id="gmail-app-content">
+        <form class="mail_form content" id="gmail-app-content">
             <img src="../images/gmail-logo-1-1.png" alt="Gmail logo" width="195px" height="45px" id="logo"/>
             <input type="email" class="mail-fileds" id="from-field" placeholder="From">
             <input type="text" class="mail-fileds" id="subject-field" placeholder="Subject">
             <textarea class="mail-fileds" id="message-field" placeholder="Message..."></textarea>
             <button type="submit" id="send-email">Send</button>
         </form>
+
+        <!-- SMTP e-mail config -->
+        <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+        <script src="./scripts/email.js" ></script>
     </div>
     
     <!-- Github redirection app -->
