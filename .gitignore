@@ -2,4 +2,4 @@
 .vscode/*
 
 # Email SMTP configs
-.src/scripts/email
+.src/scripts/email.js
