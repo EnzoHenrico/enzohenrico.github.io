@@ -10,3 +10,6 @@
 
 # Built Visual Studio Code Extensions
 *.vsix
+
+# Email SMTP configs
+.src/scripts/email.js
