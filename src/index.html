@@ -10,6 +10,10 @@
     <title>Portifólio</title>
 </head>
 <body>
+    <h1 id="hello-world">
+        That's my portifolio,<br>
+        Hope you like it!
+    </h1>
     <!-- Profile apresentation app -->
     <div class="basic-window" data-name="profile-app">
         <div class="title-bar">
@@ -50,7 +54,6 @@
         </div>
     </div>
     
-    
     <!-- G-mail messager app -->
     <div class="basic-window closed" data-name="gmail-app"> 
         <div class="title-bar">
@@ -73,31 +76,6 @@
         <!-- SMTP e-mail config -->
         <script src="https://smtpjs.com/v3/smtp.js" defer></script>
         <script src="./scripts/email.js" ></script>
-    </div>
-    
-    <!-- Github redirection app -->
-    <div class="basic-window closed" id="dark-theme" data-name="github-app"> 
-        <div class="title-bar">
-            <div class="buttons-box">
-                <div class="minimize"></div>
-                <div class="close"></div>
-            </div>
-            <div class="label-box">
-                GitHub
-            </div>
-        </div>
-        <div class="background-logo">
-            <div class="redirect-content" id="github-card">
-                <h1>
-                    Come see my projects!
-                </h1>
-                <img src="../images/profile-circle-image.png" alt="Profile picture" draggable="false">
-                <a href="https://github.com/EnzoHenrico" target="_blank">
-                    Jump to GitHub...
-                </a>
-            </div>
-        </div>
-        <!-- <img src="../images/github-icon.png" class="watermark-logo" draggable="false">   -->
     </div>
 
     <!-- Linkedin redirection app -->
@@ -122,6 +100,40 @@
         </div>
     </div>
 
+        <!-- Github redirection app -->
+        <div class="basic-window closed" id="dark-theme" data-name="github-app"> 
+            <div class="title-bar">
+                <div class="buttons-box">
+                    <div class="minimize"></div>
+                    <div class="close"></div>
+                </div>
+                <div class="label-box">
+                    GitHub
+                </div>
+            </div>
+            <div class="background-logo">
+                <div class="redirect-content" id="github-card">
+                    <h1>
+                        Come see my projects!
+                    </h1>
+                    <img src="../images/profile-circle-image.png" alt="Profile picture" draggable="false">
+                    <a href="https://github.com/EnzoHenrico" target="_blank">
+                        Jump to GitHub...
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="hidden" id="notification">
+            <div class="notification-content">
+                <img src="../images/info-icon.png" alt="information icon">
+                <span>
+                    That website is a little project that i made to promote my work,
+                    dedication and potential. 
+                    All developed with pure HTML, CSS and Javascript to enhance the 
+                    knowledge of the bases that support specific concepts.
+                </span>
+            </div>
+        </div>
     <section class="toolbar">
         <div class="home-btn">
             <div id="circle-1">
@@ -156,8 +168,9 @@
                 </li>
             </ul>
         </div>
-        <div class="clock">
-            12:00
+        <div class="notification-icon-area">
+            <img src="../images/alarm-icon.png" alt="notification alert" id="notification-icon">
+            <div id="clock"></div>
         </div>
     </section>
 </body>
