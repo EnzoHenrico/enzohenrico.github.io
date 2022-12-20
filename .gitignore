@@ -1,5 +1,5 @@
 # Editor folder
-.vscode/*
+vscode/*
 
 # Email SMTP configs
-.src/scripts/email.js
+src/scripts/email.js
