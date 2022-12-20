@@ -1,7 +1,7 @@
 /* App-windows animations */
 
 .minimize-animation {
-  animation: minimize-animation 0.5s;
+  animation: minimize-animation 0.5s ease-out;
 }
 
 @keyframes minimize-animation {
@@ -15,7 +15,7 @@
 }
 
 .maximize-animation {
-  animation: maximize-animation 0.5s;
+  animation: maximize-animation 0.25s ease-in;
 }
 
 @keyframes maximize-animation {
@@ -29,7 +29,7 @@
 }
 
 .close-animation {
-  animation: close-animation 0.5s;
+  animation: close-animation 0.25s ease-out;
 }
 
 @keyframes close-animation {
@@ -42,7 +42,7 @@
 }
 
 .open-animation {
-  animation: open-animation 0.5s;
+  animation: open-animation 0.25s ease-in;
 }
 
 @keyframes open-animation {

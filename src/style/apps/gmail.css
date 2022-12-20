@@ -58,3 +58,22 @@
   font-weight: 300;
   cursor: pointer;
 }
+
+@media screen and (max-width: 900px) {
+  .basic-window[data-name="gmail-app"] {
+    top: 50%;
+    left: 50%;
+  }
+
+  #gmail-app-content {
+    width: auto;
+    padding: 5px;
+  }
+
+  .mail-fileds {
+    width: auto;
+  }
+  #send-email {
+    width: 100%;
+  }
+}

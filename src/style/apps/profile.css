@@ -105,3 +105,10 @@
 #profile-app-content .profile-tags #mysql {
   background-color: rgba(209, 210, 203, 1);
 }
+
+@media screen and (max-width: 900px) {
+  #profile-app-content {
+    width: auto;
+    padding: 5px;
+  }
+}
