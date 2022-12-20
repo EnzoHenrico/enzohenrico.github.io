@@ -97,7 +97,7 @@ const titleBarActions = (appWindow) => {
         setTimeout(() => {
             appWindow.classList.remove("close-animation")
             appWindow.classList.add("closed")
-        }, 500)
+        }, 250)
     })
 }
 
@@ -134,7 +134,7 @@ toolbarIcons.forEach(
                 relativeWindow.classList.add("maximize-animation")
                 setTimeout(() => {
                     relativeWindow.classList.remove("maximize-animation")
-                }, 1000)
+                }, 500)
             }
 
             // When closed
@@ -145,7 +145,7 @@ toolbarIcons.forEach(
 
                 setTimeout(() => {
                     relativeWindow.classList.remove("open-animation")
-                }, 1000)
+                }, 500)
             }
             
             else {
@@ -156,7 +156,7 @@ toolbarIcons.forEach(
                 setTimeout(() => {
                     relativeWindow.classList.remove("minimize-animation")
                     relativeWindow.classList.add("hidden")
-                }, 500)
+                }, 250)
             }
         })
     }
