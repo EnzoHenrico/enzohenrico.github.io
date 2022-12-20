@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 
 /* Variables */
 :root {
@@ -14,14 +15,14 @@
   --github-dark-blue: rgba(22, 27, 34, 1);
   --github-green: rgba(35, 134, 54, 1);
   --linkedin-blue: rgba(0, 122, 185, 1);
-  --transparent-background: rgba(0, 26, 43, 0.486);
-  --transparent-background-light: rgba(109, 128, 134, 0.3);
+  --transparent-background: rgba(27, 36, 27, 0.6);
+  --transparent-background-light: rgba(114, 134, 109, 0.3);
 }
 
 /* Custom body params */
 body {
   font-family: "DM Sans", sans-serif;
-  background-image: url("../../images/wallpaper.jpg");
+  background-image: url("../../images/wallpaperflare.com_wallpaper.jpg");
 }
 
 /* Basic window container */
@@ -177,6 +178,18 @@ body {
 .watermark-logo {
   position: fixed;
   width: 30%;
+}
+
+#hello-world {
+  font-size: 3rem;
+  color: #e7ffc494;
+  padding: 40px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  line-height: 72px;
+  position: relative;
+  animation: presentation 2s ease-out;
+  user-select: none;
 }
 
 @media screen and (max-width: 900px) {

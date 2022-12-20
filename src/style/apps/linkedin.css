@@ -48,11 +48,6 @@
   .basic-window[data-name="linkedin-app"] {
     top: 50%;
     left: 50%;
-    background-image: url("../../../images/linkedin-icon.png");
-    background-repeat: no-repeat;
-    background-size: 95%;
-    background-position-x: -365%;
-    background-position-y: 130%;
   }
 
   #linkedin-card {

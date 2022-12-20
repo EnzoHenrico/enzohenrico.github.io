@@ -14,19 +14,32 @@
 
 /* info-panel */
 
-.clock {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 7px;
-  padding: 15px 30px;
-  background-color: var(--transparent-background-light);
-  border-radius: 50px;
+#clock {
   color: white;
   font-size: 1rem;
   font-weight: 600;
   user-select: none;
+}
+
+#notification-icon {
+  width: 1.2rem;
+}
+
+#notification-icon:hover {
+  background-color: var(--transparent-background-light);
+  border-radius: 50%;
+  transform: scale(1.1);
+}
+
+.notification-icon-area {
+  margin: 7px;
+  padding: 15px 30px;
+  background-color: var(--transparent-background-light);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Home button */
@@ -99,11 +112,53 @@
   border-radius: 50px;
 }
 
+#notification {
+  background: var(--transparent-background-light);
+  padding: 26px;
+  border-radius: 50px;
+  color: var(--ice);
+  position: absolute;
+  top: 56%;
+  left: 76%;
+  max-width: 261px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 10px;
+}
+
+.notification-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.notification-content img {
+  width: 40px;
+}
+
 @media screen and (max-width: 900px) {
   .toolbar {
     border-radius: 0px;
     justify-content: center;
     padding: 10px;
+  }
+
+  .notification-icon-area {
+    background-color: var(--transparent-background);
+    padding: 15px;
+    position: absolute;
+    left: 78%;
+    top: -104%;
+  }
+
+  #notification {
+    background: var(--transparent-background);
+    top: 57%;
+    left: 0%;
+    max-width: 281px;
+    margin: 10px;
   }
 
   .icons-section ul {
@@ -113,7 +168,7 @@
   .home-btn {
     display: none;
   }
-  .clock {
+  #clock {
     display: none;
   }
 }

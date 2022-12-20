@@ -88,3 +88,29 @@
     opacity: 0%;
   }
 }
+
+.profile-card {
+  position: relative;
+  animation: presentation 0.75s ease-out;
+}
+
+.profile-text {
+  position: relative;
+  animation: presentation 1s ease-out;
+}
+
+.profile-tags {
+  position: relative;
+  animation: presentation 1.25s ease-out;
+}
+
+@keyframes presentation {
+  from {
+    opacity: 0%;
+    left: 50%;
+  }
+  to {
+    opacity: 100%;
+    left: 0;
+  }
+}
