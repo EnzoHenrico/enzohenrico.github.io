@@ -160,4 +160,28 @@ toolbarIcons.forEach(
             }
         })
     }
-);
+)
+
+const notificationIcon = document.getElementById("notification-icon")
+const notificationText = document.getElementById("notification")
+
+notificationIcon.addEventListener(events[inputType].down, () => {
+    
+    if (notificationText.classList.contains("hidden")) {
+     
+        notificationText.classList.remove("hidden")   
+        notificationText.classList.add("maximize-animation")
+        setTimeout(() => {
+            notificationText.classList.remove("maximize-animation")
+        }, 500)
+    } 
+    else {
+
+        notificationText.classList.add("minimize-animation")
+        setTimeout(() => {
+            notificationText.classList.add("hidden")
+            notificationText.classList.remove("minimize-animation")
+        }, 500)
+    }
+
+})
