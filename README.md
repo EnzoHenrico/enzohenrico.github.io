@@ -1,4 +1,4 @@
-# That's my portfolio V1
+# That's my portfolio V2
 
 A small project to share my profile and work with the world!
 
